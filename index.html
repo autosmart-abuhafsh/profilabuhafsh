@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Portofolio Abu Hafsh">
+  <title>Portofolio Abu Hafsh</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --black: #0b0b0b;
+      --gold: #d8b45a;
+      --gold-light: #f2d98b;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: var(--black);
+    }
+    #app-frame {
+      display: block;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+      background: var(--black);
+    }
+    .direct-link {
+      position: fixed;
+      z-index: 1000;
+      right: max(12px, env(safe-area-inset-right));
+      bottom: max(12px, env(safe-area-inset-bottom));
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      max-width: calc(100vw - 24px);
+      padding: 10px 14px;
+      border: 1px solid rgba(216, 180, 90, .65);
+      border-radius: 999px;
+      background: rgba(11, 11, 11, .91);
+      color: var(--gold-light);
+      font: 600 13px/1.2 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .35);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .direct-link:focus-visible {
+      outline: 2px solid var(--gold-light);
+      outline-offset: 3px;
+    }
+    .direct-link:hover {
+      background: #1b180f;
+      border-color: var(--gold-light);
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    id="app-frame"
+    title="Portofolio Abu Hafsh"
+    src="https://script.google.com/macros/s/AKfycbyhDjz8zfu5mg0ykhRu_ForsSCBQO4zUXclAFO8AT_y5Sn8pA15IijpXLnopkP0W0Vk/exec"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="clipboard-read; clipboard-write"
+  ></iframe>
+</body>
+</html>
